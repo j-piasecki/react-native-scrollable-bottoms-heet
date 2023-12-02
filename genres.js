@@ -1,0 +1,16 @@
+export const GENRES = [
+  "🌵 Western",
+  "🎭 Drama",
+  "🎬 Comedy",
+  "🎥 Action",
+  "👻 Horror",
+  "👨‍🚀 Sci-Fi",
+  "🎓 Documentary",
+  "🎞️ Animation",
+  "🎵 Musical", 
+  "🎨 Art",
+  "👮 Crime",
+  "👨‍👩‍👧‍👦 Family",
+  "🧙 Fantasy",
+  "🤖 Futuristic",
+]

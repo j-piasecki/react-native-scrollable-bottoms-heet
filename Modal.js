@@ -61,10 +61,10 @@ export default function Modal({ toggleSheet, initialGenres, setGenres }) {
       const clamp = Math.max(-OVERDRAG, offsetDelta);
       offset.value = offsetDelta > 0 ? offsetDelta : withSpring(clamp);
     })
-    .onFinalize(() => {
+    .onFinalize((e) => {
       scrollEnabled.value = true;
 
-      if (offset.value < HEIGHT / 3) {
+      if (offset.value < HEIGHT / 3 && (e.velocityY < 750 || e.oldState != 4)) {
         offset.value = withSpring(0);
       } else {
         offset.value = withTiming(HEIGHT, {}, () => {
